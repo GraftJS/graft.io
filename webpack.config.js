@@ -9,7 +9,9 @@ module.exports = {
   module: {
     loaders: [
       { test: /\.css$/,    loader: 'style!css' },
-      { test: /\.png$/,    loader: 'file?prefix=images/' }
+      { test: /\.png$/,    loader: 'file?prefix=images/' },
+			{ test: /\.svg$/,    loader: 'file?prefix=images/' },
+      
     ]
   }
 };
