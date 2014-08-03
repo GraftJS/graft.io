@@ -56,7 +56,6 @@
 	__webpack_require__(3);
 
 
-
 	// Copy the index.html to the output folder
 	__webpack_require__(4);
 
@@ -70,6 +69,7 @@
 	var ImageSurface = __webpack_require__(14);
 	var Surface = __webpack_require__(10);
 	var Please = __webpack_require__(6);
+	debugger;
 	var _ = __webpack_require__(15);
 
 	// create the main context
@@ -178,6 +178,9 @@
 /***/ },
 /* 6 */
 /***/ function(module, exports, __webpack_require__) {
+
+	/*** IMPORTS FROM imports-loader ***/
+	var window = {};
 
 	/*Please JS v0.2.0, Jordan Checkman 2014, Checkman.io, MIT Liscense, Have fun.*/
 	(function(window){
@@ -779,6 +782,9 @@
 			window.Please = define_Please();
 		}
 	})( window );
+
+	/*** EXPORTS FROM exports-loader ***/
+	module.exports = window.Please
 
 /***/ },
 /* 7 */
