@@ -13,5 +13,8 @@ module.exports = {
 			{ test: /\.svg$/,    loader: 'file?prefix=images/' },
       
     ]
+  },
+  externals: {
+    'pleasejs': 'Please'
   }
 };
