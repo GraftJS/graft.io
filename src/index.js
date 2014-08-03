@@ -6,6 +6,10 @@ require('./styles');
 // Load polyfills
 require('famous-polyfills');
 
+// Copy the index.html to the output folder
+require('file?name=CNAME!../CNAME');
+
+
 
 // Copy the index.html to the output folder
 require('file?name=index.html!./index.html');
