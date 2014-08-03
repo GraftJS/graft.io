@@ -44,6 +44,8 @@ var activeColor = colors[0];
 
 var background = new RenderController({
 });
+
+
 background.show(new Surface({
   properties: {
     backgroundColor: activeColor
