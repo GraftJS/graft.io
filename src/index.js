@@ -6,6 +6,10 @@ require('./styles');
 // Load polyfills
 require('famous-polyfills');
 
+
+// Copy the index.html to the output folder
+require('file?name=index.html!./index.html');
+
 // import dependencies
 var Engine = require('famous/core/Engine');
 var Modifier = require('famous/core/Modifier');
