@@ -1,7 +1,7 @@
 {
   "name": "graft.io",
   "version": "0.0.1",
-  "description": "A seed project to get started with Webpack and Famo.us",
+  "description": "Website for graft project",
   "main": "src/index.js",
   "scripts": {
     "test": "npm run lint -s"
