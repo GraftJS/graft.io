@@ -44,7 +44,7 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(22);
+	__webpack_require__(20);
 
 	// load css
 	__webpack_require__(1);
@@ -161,7 +161,7 @@
 /* 1 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(20);
+	__webpack_require__(22);
 
 
 /***/ },
@@ -2045,10 +2045,10 @@
 
 	!(__WEBPACK_AMD_DEFINE_RESULT__ = (function(require, exports, module) {
 	    var Modifier = __webpack_require__(7);
-	    var RenderNode = __webpack_require__(29);
+	    var RenderNode = __webpack_require__(33);
 	    var Transform = __webpack_require__(8);
 	    var Transitionable = __webpack_require__(12);
-	    var View = __webpack_require__(30);
+	    var View = __webpack_require__(34);
 
 	    /**
 	     * A dynamic view that can show or hide different renerables with transitions.
@@ -2352,8 +2352,8 @@
 	 */
 
 	!(__WEBPACK_AMD_DEFINE_RESULT__ = (function(require, exports, module) {
-	    var CachedMap = __webpack_require__(31);
-	    var Entity = __webpack_require__(32);
+	    var CachedMap = __webpack_require__(29);
+	    var Entity = __webpack_require__(30);
 	    var EventHandler = __webpack_require__(25);
 	    var Transform = __webpack_require__(8);
 	    var RenderController = __webpack_require__(10);
@@ -2464,8 +2464,8 @@
 	 */
 
 	!(__WEBPACK_AMD_DEFINE_RESULT__ = (function(require, exports, module) {
-	    var MultipleTransition = __webpack_require__(33);
-	    var TweenTransition = __webpack_require__(34);
+	    var MultipleTransition = __webpack_require__(31);
+	    var TweenTransition = __webpack_require__(32);
 
 	    /**
 	     * A state maintainer for a smooth transition between
@@ -10779,7 +10779,7 @@
 	  }
 	}.call(this));
 	
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(40)(module), (function() { return this; }())))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(39)(module), (function() { return this; }())))
 
 /***/ },
 /* 17 */
@@ -10991,7 +10991,7 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports =
-		"html {\n  background: #fff;\n}\n\n.backfaceVisibility {\n  -webkit-backface-visibility: visible;\n  backface-visibility: visible;\n}\n";
+		"/* This Source Code Form is subject to the terms of the Mozilla Public\n * License, v. 2.0. If a copy of the MPL was not distributed with this\n * file, You can obtain one at http://mozilla.org/MPL/2.0/.\n *\n * Owner: mark@famo.us\n * @license MPL 2.0\n * @copyright Famous Industries, Inc. 2014\n */\n\n.famous-root {\n    width: 100%;\n    height: 100%;\n    margin: 0px;\n    padding: 0px;\n    overflow: hidden;\n    -webkit-transform-style: preserve-3d;\n    transform-style: preserve-3d;\n}\n\n.famous-container, .famous-group {\n    position: absolute;\n    top: 0px;\n    left: 0px;\n    bottom: 0px;\n    right: 0px;\n    overflow: visible;\n    -webkit-transform-style: preserve-3d;\n    transform-style: preserve-3d;\n    -webkit-backface-visibility: visible;\n    backface-visibility: visible;\n    pointer-events: none;\n}\n\n.famous-group {\n    width: 0px;\n    height: 0px;\n    margin: 0px;\n    padding: 0px;\n    -webkit-transform-style: preserve-3d;\n    transform-style: preserve-3d;\n}\n\n.famous-surface {\n    position: absolute;\n    -webkit-transform-origin: center center;\n    transform-origin: center center;\n    -webkit-backface-visibility: hidden;\n    backface-visibility: hidden;\n    -webkit-transform-style: flat;\n    transform-style: preserve-3d; /* performance */\n    -webkit-box-sizing: border-box;\n    -moz-box-sizing: border-box;\n    box-sizing: border-box;\n    -webkit-tap-highlight-color: transparent;\n    pointer-events: auto;\n}\n\n.famous-container-group {\n    position: relative;\n    width: 100%;\n    height: 100%;\n}\n";
 
 /***/ },
 /* 22 */
@@ -11011,7 +11011,7 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports =
-		"/* This Source Code Form is subject to the terms of the Mozilla Public\n * License, v. 2.0. If a copy of the MPL was not distributed with this\n * file, You can obtain one at http://mozilla.org/MPL/2.0/.\n *\n * Owner: mark@famo.us\n * @license MPL 2.0\n * @copyright Famous Industries, Inc. 2014\n */\n\n.famous-root {\n    width: 100%;\n    height: 100%;\n    margin: 0px;\n    padding: 0px;\n    overflow: hidden;\n    -webkit-transform-style: preserve-3d;\n    transform-style: preserve-3d;\n}\n\n.famous-container, .famous-group {\n    position: absolute;\n    top: 0px;\n    left: 0px;\n    bottom: 0px;\n    right: 0px;\n    overflow: visible;\n    -webkit-transform-style: preserve-3d;\n    transform-style: preserve-3d;\n    -webkit-backface-visibility: visible;\n    backface-visibility: visible;\n    pointer-events: none;\n}\n\n.famous-group {\n    width: 0px;\n    height: 0px;\n    margin: 0px;\n    padding: 0px;\n    -webkit-transform-style: preserve-3d;\n    transform-style: preserve-3d;\n}\n\n.famous-surface {\n    position: absolute;\n    -webkit-transform-origin: center center;\n    transform-origin: center center;\n    -webkit-backface-visibility: hidden;\n    backface-visibility: hidden;\n    -webkit-transform-style: flat;\n    transform-style: preserve-3d; /* performance */\n    -webkit-box-sizing: border-box;\n    -moz-box-sizing: border-box;\n    box-sizing: border-box;\n    -webkit-tap-highlight-color: transparent;\n    pointer-events: auto;\n}\n\n.famous-container-group {\n    position: relative;\n    width: 100%;\n    height: 100%;\n}\n";
+		"html {\n  background: #fff;\n}\n\n.backfaceVisibility {\n  -webkit-backface-visibility: visible;\n  backface-visibility: visible;\n}\n";
 
 /***/ },
 /* 24 */
@@ -11027,7 +11027,7 @@
 	 */
 
 	!(__WEBPACK_AMD_DEFINE_RESULT__ = (function(require, exports, module) {
-	    var RenderNode = __webpack_require__(29);
+	    var RenderNode = __webpack_require__(33);
 	    var EventHandler = __webpack_require__(25);
 	    var ElementAllocator = __webpack_require__(36);
 	    var Transform = __webpack_require__(8);
@@ -11260,7 +11260,7 @@
 	 */
 
 	!(__WEBPACK_AMD_DEFINE_RESULT__ = (function(require, exports, module) {
-	    var EventEmitter = __webpack_require__(37);
+	    var EventEmitter = __webpack_require__(40);
 
 	    /**
 	     * EventHandler forwards received events to a set of provided callback functions.
@@ -11692,7 +11692,7 @@
 	!(__WEBPACK_AMD_DEFINE_RESULT__ = (function(require, exports, module) {
 	    var Transitionable = __webpack_require__(12);
 	    var Transform = __webpack_require__(8);
-	    var Utility = __webpack_require__(38);
+	    var Utility = __webpack_require__(37);
 
 	    /**
 	     * A class for transitioning the state of a Transform by transitioning
@@ -11912,7 +11912,7 @@
 	 */
 
 	!(__WEBPACK_AMD_DEFINE_RESULT__ = (function(require, exports, module) {
-	    var Entity = __webpack_require__(32);
+	    var Entity = __webpack_require__(30);
 	    var EventHandler = __webpack_require__(25);
 	    var Transform = __webpack_require__(8);
 
@@ -12245,295 +12245,6 @@
 	 * License, v. 2.0. If a copy of the MPL was not distributed with this
 	 * file, You can obtain one at http://mozilla.org/MPL/2.0/.
 	 *
-	 * Owner: mark@famo.us
-	 * @license MPL 2.0
-	 * @copyright Famous Industries, Inc. 2014
-	 */
-
-	!(__WEBPACK_AMD_DEFINE_RESULT__ = (function(require, exports, module) {
-	    var Entity = __webpack_require__(32);
-	    var SpecParser = __webpack_require__(39);
-
-	    /**
-	     * A wrapper for inserting a renderable component (like a Modifer or
-	     *   Surface) into the render tree.
-	     *
-	     * @class RenderNode
-	     * @constructor
-	     *
-	     * @param {Object} object Target renderable component
-	     */
-	    function RenderNode(object) {
-	        this._object = null;
-	        this._child = null;
-	        this._hasMultipleChildren = false;
-	        this._isRenderable = false;
-	        this._isModifier = false;
-
-	        this._resultCache = {};
-	        this._prevResults = {};
-
-	        this._childResult = null;
-
-	        if (object) this.set(object);
-	    }
-
-	    /**
-	     * Append a renderable to the list of this node's children.
-	     *   This produces a new RenderNode in the tree.
-	     *   Note: Does not double-wrap if child is a RenderNode already.
-	     *
-	     * @method add
-	     * @param {Object} child renderable object
-	     * @return {RenderNode} new render node wrapping child
-	     */
-	    RenderNode.prototype.add = function add(child) {
-	        var childNode = (child instanceof RenderNode) ? child : new RenderNode(child);
-	        if (this._child instanceof Array) this._child.push(childNode);
-	        else if (this._child) {
-	            this._child = [this._child, childNode];
-	            this._hasMultipleChildren = true;
-	            this._childResult = []; // to be used later
-	        }
-	        else this._child = childNode;
-
-	        return childNode;
-	    };
-
-	    /**
-	     * Return the single wrapped object.  Returns null if this node has multiple child nodes.
-	     *
-	     * @method get
-	     *
-	     * @return {Ojbect} contained renderable object
-	     */
-	    RenderNode.prototype.get = function get() {
-	        return this._object || (this._hasMultipleChildren ? null : (this._child ? this._child.get() : null));
-	    };
-
-	    /**
-	     * Overwrite the list of children to contain the single provided object
-	     *
-	     * @method set
-	     * @param {Object} child renderable object
-	     * @return {RenderNode} this render node, or child if it is a RenderNode
-	     */
-	    RenderNode.prototype.set = function set(child) {
-	        this._childResult = null;
-	        this._hasMultipleChildren = false;
-	        this._isRenderable = child.render ? true : false;
-	        this._isModifier = child.modify ? true : false;
-	        this._object = child;
-	        this._child = null;
-	        if (child instanceof RenderNode) return child;
-	        else return this;
-	    };
-
-	    /**
-	     * Get render size of contained object.
-	     *
-	     * @method getSize
-	     * @return {Array.Number} size of this or size of single child.
-	     */
-	    RenderNode.prototype.getSize = function getSize() {
-	        var result = null;
-	        var target = this.get();
-	        if (target && target.getSize) result = target.getSize();
-	        if (!result && this._child && this._child.getSize) result = this._child.getSize();
-	        return result;
-	    };
-
-	    // apply results of rendering this subtree to the document
-	    function _applyCommit(spec, context, cacheStorage) {
-	        var result = SpecParser.parse(spec, context);
-	        var keys = Object.keys(result);
-	        for (var i = 0; i < keys.length; i++) {
-	            var id = keys[i];
-	            var childNode = Entity.get(id);
-	            var commitParams = result[id];
-	            commitParams.allocator = context.allocator;
-	            var commitResult = childNode.commit(commitParams);
-	            if (commitResult) _applyCommit(commitResult, context, cacheStorage);
-	            else cacheStorage[id] = commitParams;
-	        }
-	    }
-
-	    /**
-	     * Commit the content change from this node to the document.
-	     *
-	     * @private
-	     * @method commit
-	     * @param {Context} context render context
-	     */
-	    RenderNode.prototype.commit = function commit(context) {
-	        // free up some divs from the last loop
-	        var prevKeys = Object.keys(this._prevResults);
-	        for (var i = 0; i < prevKeys.length; i++) {
-	            var id = prevKeys[i];
-	            if (this._resultCache[id] === undefined) {
-	                var object = Entity.get(id);
-	                if (object.cleanup) object.cleanup(context.allocator);
-	            }
-	        }
-
-	        this._prevResults = this._resultCache;
-	        this._resultCache = {};
-	        _applyCommit(this.render(), context, this._resultCache);
-	    };
-
-	    /**
-	     * Generate a render spec from the contents of the wrapped component.
-	     *
-	     * @private
-	     * @method render
-	     *
-	     * @return {Object} render specification for the component subtree
-	     *    only under this node.
-	     */
-	    RenderNode.prototype.render = function render() {
-	        if (this._isRenderable) return this._object.render();
-
-	        var result = null;
-	        if (this._hasMultipleChildren) {
-	            result = this._childResult;
-	            var children = this._child;
-	            for (var i = 0; i < children.length; i++) {
-	                result[i] = children[i].render();
-	            }
-	        }
-	        else if (this._child) result = this._child.render();
-
-	        return this._isModifier ? this._object.modify(result) : result;
-	    };
-
-	    module.exports = RenderNode;
-	}.call(exports, __webpack_require__, exports, module)), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-
-
-/***/ },
-/* 30 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var __WEBPACK_AMD_DEFINE_RESULT__;/* This Source Code Form is subject to the terms of the Mozilla Public
-	 * License, v. 2.0. If a copy of the MPL was not distributed with this
-	 * file, You can obtain one at http://mozilla.org/MPL/2.0/.
-	 *
-	 * Owner: mark@famo.us
-	 * @license MPL 2.0
-	 * @copyright Famous Industries, Inc. 2014
-	 */
-
-	!(__WEBPACK_AMD_DEFINE_RESULT__ = (function(require, exports, module) {
-	    var EventHandler = __webpack_require__(25);
-	    var OptionsManager = __webpack_require__(26);
-	    var RenderNode = __webpack_require__(29);
-	    var Utility = __webpack_require__(38);
-
-	    /**
-	     * Useful for quickly creating elements within applications
-	     *   with large event systems.  Consists of a RenderNode paired with
-	     *   an input EventHandler and an output EventHandler.
-	     *   Meant to be extended by the developer.
-	     *
-	     * @class View
-	     * @uses EventHandler
-	     * @uses OptionsManager
-	     * @uses RenderNode
-	     * @constructor
-	     */
-	    function View(options) {
-	        this._node = new RenderNode();
-
-	        this._eventInput = new EventHandler();
-	        this._eventOutput = new EventHandler();
-	        EventHandler.setInputHandler(this, this._eventInput);
-	        EventHandler.setOutputHandler(this, this._eventOutput);
-
-	        this.options = Utility.clone(this.constructor.DEFAULT_OPTIONS || View.DEFAULT_OPTIONS);
-	        this._optionsManager = new OptionsManager(this.options);
-
-	        if (options) this.setOptions(options);
-	    }
-
-	    View.DEFAULT_OPTIONS = {}; // no defaults
-
-	    /**
-	     * Look up options value by key
-	     * @method getOptions
-	     *
-	     * @param {string} key key
-	     * @return {Object} associated object
-	     */
-	    View.prototype.getOptions = function getOptions() {
-	        return this._optionsManager.value();
-	    };
-
-	    /*
-	     *  Set internal options.
-	     *  No defaults options are set in View.
-	     *
-	     *  @method setOptions
-	     *  @param {Object} options
-	     */
-	    View.prototype.setOptions = function setOptions(options) {
-	        this._optionsManager.patch(options);
-	    };
-
-	    /**
-	     * Add a child renderable to the view.
-	     *   Note: This is meant to be used by an inheriting class
-	     *   rather than from outside the prototype chain.
-	     *
-	     * @method add
-	     * @return {RenderNode}
-	     * @protected
-	     */
-	    View.prototype.add = function add() {
-	        return this._node.add.apply(this._node, arguments);
-	    };
-
-	    /**
-	     * Alias for add
-	     * @method _add
-	     */
-	    View.prototype._add = View.prototype.add;
-
-	    /**
-	     * Generate a render spec from the contents of this component.
-	     *
-	     * @private
-	     * @method render
-	     * @return {number} Render spec for this component
-	     */
-	    View.prototype.render = function render() {
-	        return this._node.render();
-	    };
-
-	    /**
-	     * Return size of contained element.
-	     *
-	     * @method getSize
-	     * @return {Array.Number} [width, height]
-	     */
-	    View.prototype.getSize = function getSize() {
-	        if (this._node && this._node.getSize) {
-	            return this._node.getSize.apply(this._node, arguments) || this.options.size;
-	        }
-	        else return this.options.size;
-	    };
-
-	    module.exports = View;
-	}.call(exports, __webpack_require__, exports, module)), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-
-
-/***/ },
-/* 31 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var __WEBPACK_AMD_DEFINE_RESULT__;/* This Source Code Form is subject to the terms of the Mozilla Public
-	 * License, v. 2.0. If a copy of the MPL was not distributed with this
-	 * file, You can obtain one at http://mozilla.org/MPL/2.0/.
-	 *
 	 * Owner: david@famo.us
 	 * @license MPL 2.0
 	 * @copyright Famous Industries, Inc. 2014
@@ -12584,7 +12295,7 @@
 
 
 /***/ },
-/* 32 */
+/* 30 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_RESULT__;/* This Source Code Form is subject to the terms of the Mozilla Public
@@ -12667,7 +12378,7 @@
 
 
 /***/ },
-/* 33 */
+/* 31 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_RESULT__;/* This Source Code Form is subject to the terms of the Mozilla Public
@@ -12680,7 +12391,7 @@
 	 */
 
 	!(__WEBPACK_AMD_DEFINE_RESULT__ = (function(require, exports, module) {
-	    var Utility = __webpack_require__(38);
+	    var Utility = __webpack_require__(37);
 
 	    /**
 	     * Transition meta-method to support transitioning multiple
@@ -12750,7 +12461,7 @@
 
 
 /***/ },
-/* 34 */
+/* 32 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_RESULT__;/* This Source Code Form is subject to the terms of the Mozilla Public
@@ -13182,6 +12893,295 @@
 
 
 /***/ },
+/* 33 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __WEBPACK_AMD_DEFINE_RESULT__;/* This Source Code Form is subject to the terms of the Mozilla Public
+	 * License, v. 2.0. If a copy of the MPL was not distributed with this
+	 * file, You can obtain one at http://mozilla.org/MPL/2.0/.
+	 *
+	 * Owner: mark@famo.us
+	 * @license MPL 2.0
+	 * @copyright Famous Industries, Inc. 2014
+	 */
+
+	!(__WEBPACK_AMD_DEFINE_RESULT__ = (function(require, exports, module) {
+	    var Entity = __webpack_require__(30);
+	    var SpecParser = __webpack_require__(38);
+
+	    /**
+	     * A wrapper for inserting a renderable component (like a Modifer or
+	     *   Surface) into the render tree.
+	     *
+	     * @class RenderNode
+	     * @constructor
+	     *
+	     * @param {Object} object Target renderable component
+	     */
+	    function RenderNode(object) {
+	        this._object = null;
+	        this._child = null;
+	        this._hasMultipleChildren = false;
+	        this._isRenderable = false;
+	        this._isModifier = false;
+
+	        this._resultCache = {};
+	        this._prevResults = {};
+
+	        this._childResult = null;
+
+	        if (object) this.set(object);
+	    }
+
+	    /**
+	     * Append a renderable to the list of this node's children.
+	     *   This produces a new RenderNode in the tree.
+	     *   Note: Does not double-wrap if child is a RenderNode already.
+	     *
+	     * @method add
+	     * @param {Object} child renderable object
+	     * @return {RenderNode} new render node wrapping child
+	     */
+	    RenderNode.prototype.add = function add(child) {
+	        var childNode = (child instanceof RenderNode) ? child : new RenderNode(child);
+	        if (this._child instanceof Array) this._child.push(childNode);
+	        else if (this._child) {
+	            this._child = [this._child, childNode];
+	            this._hasMultipleChildren = true;
+	            this._childResult = []; // to be used later
+	        }
+	        else this._child = childNode;
+
+	        return childNode;
+	    };
+
+	    /**
+	     * Return the single wrapped object.  Returns null if this node has multiple child nodes.
+	     *
+	     * @method get
+	     *
+	     * @return {Ojbect} contained renderable object
+	     */
+	    RenderNode.prototype.get = function get() {
+	        return this._object || (this._hasMultipleChildren ? null : (this._child ? this._child.get() : null));
+	    };
+
+	    /**
+	     * Overwrite the list of children to contain the single provided object
+	     *
+	     * @method set
+	     * @param {Object} child renderable object
+	     * @return {RenderNode} this render node, or child if it is a RenderNode
+	     */
+	    RenderNode.prototype.set = function set(child) {
+	        this._childResult = null;
+	        this._hasMultipleChildren = false;
+	        this._isRenderable = child.render ? true : false;
+	        this._isModifier = child.modify ? true : false;
+	        this._object = child;
+	        this._child = null;
+	        if (child instanceof RenderNode) return child;
+	        else return this;
+	    };
+
+	    /**
+	     * Get render size of contained object.
+	     *
+	     * @method getSize
+	     * @return {Array.Number} size of this or size of single child.
+	     */
+	    RenderNode.prototype.getSize = function getSize() {
+	        var result = null;
+	        var target = this.get();
+	        if (target && target.getSize) result = target.getSize();
+	        if (!result && this._child && this._child.getSize) result = this._child.getSize();
+	        return result;
+	    };
+
+	    // apply results of rendering this subtree to the document
+	    function _applyCommit(spec, context, cacheStorage) {
+	        var result = SpecParser.parse(spec, context);
+	        var keys = Object.keys(result);
+	        for (var i = 0; i < keys.length; i++) {
+	            var id = keys[i];
+	            var childNode = Entity.get(id);
+	            var commitParams = result[id];
+	            commitParams.allocator = context.allocator;
+	            var commitResult = childNode.commit(commitParams);
+	            if (commitResult) _applyCommit(commitResult, context, cacheStorage);
+	            else cacheStorage[id] = commitParams;
+	        }
+	    }
+
+	    /**
+	     * Commit the content change from this node to the document.
+	     *
+	     * @private
+	     * @method commit
+	     * @param {Context} context render context
+	     */
+	    RenderNode.prototype.commit = function commit(context) {
+	        // free up some divs from the last loop
+	        var prevKeys = Object.keys(this._prevResults);
+	        for (var i = 0; i < prevKeys.length; i++) {
+	            var id = prevKeys[i];
+	            if (this._resultCache[id] === undefined) {
+	                var object = Entity.get(id);
+	                if (object.cleanup) object.cleanup(context.allocator);
+	            }
+	        }
+
+	        this._prevResults = this._resultCache;
+	        this._resultCache = {};
+	        _applyCommit(this.render(), context, this._resultCache);
+	    };
+
+	    /**
+	     * Generate a render spec from the contents of the wrapped component.
+	     *
+	     * @private
+	     * @method render
+	     *
+	     * @return {Object} render specification for the component subtree
+	     *    only under this node.
+	     */
+	    RenderNode.prototype.render = function render() {
+	        if (this._isRenderable) return this._object.render();
+
+	        var result = null;
+	        if (this._hasMultipleChildren) {
+	            result = this._childResult;
+	            var children = this._child;
+	            for (var i = 0; i < children.length; i++) {
+	                result[i] = children[i].render();
+	            }
+	        }
+	        else if (this._child) result = this._child.render();
+
+	        return this._isModifier ? this._object.modify(result) : result;
+	    };
+
+	    module.exports = RenderNode;
+	}.call(exports, __webpack_require__, exports, module)), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+
+
+/***/ },
+/* 34 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __WEBPACK_AMD_DEFINE_RESULT__;/* This Source Code Form is subject to the terms of the Mozilla Public
+	 * License, v. 2.0. If a copy of the MPL was not distributed with this
+	 * file, You can obtain one at http://mozilla.org/MPL/2.0/.
+	 *
+	 * Owner: mark@famo.us
+	 * @license MPL 2.0
+	 * @copyright Famous Industries, Inc. 2014
+	 */
+
+	!(__WEBPACK_AMD_DEFINE_RESULT__ = (function(require, exports, module) {
+	    var EventHandler = __webpack_require__(25);
+	    var OptionsManager = __webpack_require__(26);
+	    var RenderNode = __webpack_require__(33);
+	    var Utility = __webpack_require__(37);
+
+	    /**
+	     * Useful for quickly creating elements within applications
+	     *   with large event systems.  Consists of a RenderNode paired with
+	     *   an input EventHandler and an output EventHandler.
+	     *   Meant to be extended by the developer.
+	     *
+	     * @class View
+	     * @uses EventHandler
+	     * @uses OptionsManager
+	     * @uses RenderNode
+	     * @constructor
+	     */
+	    function View(options) {
+	        this._node = new RenderNode();
+
+	        this._eventInput = new EventHandler();
+	        this._eventOutput = new EventHandler();
+	        EventHandler.setInputHandler(this, this._eventInput);
+	        EventHandler.setOutputHandler(this, this._eventOutput);
+
+	        this.options = Utility.clone(this.constructor.DEFAULT_OPTIONS || View.DEFAULT_OPTIONS);
+	        this._optionsManager = new OptionsManager(this.options);
+
+	        if (options) this.setOptions(options);
+	    }
+
+	    View.DEFAULT_OPTIONS = {}; // no defaults
+
+	    /**
+	     * Look up options value by key
+	     * @method getOptions
+	     *
+	     * @param {string} key key
+	     * @return {Object} associated object
+	     */
+	    View.prototype.getOptions = function getOptions() {
+	        return this._optionsManager.value();
+	    };
+
+	    /*
+	     *  Set internal options.
+	     *  No defaults options are set in View.
+	     *
+	     *  @method setOptions
+	     *  @param {Object} options
+	     */
+	    View.prototype.setOptions = function setOptions(options) {
+	        this._optionsManager.patch(options);
+	    };
+
+	    /**
+	     * Add a child renderable to the view.
+	     *   Note: This is meant to be used by an inheriting class
+	     *   rather than from outside the prototype chain.
+	     *
+	     * @method add
+	     * @return {RenderNode}
+	     * @protected
+	     */
+	    View.prototype.add = function add() {
+	        return this._node.add.apply(this._node, arguments);
+	    };
+
+	    /**
+	     * Alias for add
+	     * @method _add
+	     */
+	    View.prototype._add = View.prototype.add;
+
+	    /**
+	     * Generate a render spec from the contents of this component.
+	     *
+	     * @private
+	     * @method render
+	     * @return {number} Render spec for this component
+	     */
+	    View.prototype.render = function render() {
+	        return this._node.render();
+	    };
+
+	    /**
+	     * Return size of contained element.
+	     *
+	     * @method getSize
+	     * @return {Array.Number} [width, height]
+	     */
+	    View.prototype.getSize = function getSize() {
+	        if (this._node && this._node.getSize) {
+	            return this._node.getSize.apply(this._node, arguments) || this.options.size;
+	        }
+	        else return this.options.size;
+	    };
+
+	    module.exports = View;
+	}.call(exports, __webpack_require__, exports, module)), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+
+
+/***/ },
 /* 35 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -13335,107 +13335,6 @@
 
 	!(__WEBPACK_AMD_DEFINE_RESULT__ = (function(require, exports, module) {
 	    /**
-	     * EventEmitter represents a channel for events.
-	     *
-	     * @class EventEmitter
-	     * @constructor
-	     */
-	    function EventEmitter() {
-	        this.listeners = {};
-	        this._owner = this;
-	    }
-
-	    /**
-	     * Trigger an event, sending to all downstream handlers
-	     *   listening for provided 'type' key.
-	     *
-	     * @method emit
-	     *
-	     * @param {string} type event type key (for example, 'click')
-	     * @param {Object} event event data
-	     * @return {EventHandler} this
-	     */
-	    EventEmitter.prototype.emit = function emit(type, event) {
-	        var handlers = this.listeners[type];
-	        if (handlers) {
-	            for (var i = 0; i < handlers.length; i++) {
-	                handlers[i].call(this._owner, event);
-	            }
-	        }
-	        return this;
-	    };
-
-	    /**
-	     * Bind a callback function to an event type handled by this object.
-	     *
-	     * @method "on"
-	     *
-	     * @param {string} type event type key (for example, 'click')
-	     * @param {function(string, Object)} handler callback
-	     * @return {EventHandler} this
-	     */
-	   EventEmitter.prototype.on = function on(type, handler) {
-	        if (!(type in this.listeners)) this.listeners[type] = [];
-	        var index = this.listeners[type].indexOf(handler);
-	        if (index < 0) this.listeners[type].push(handler);
-	        return this;
-	    };
-
-	    /**
-	     * Alias for "on".
-	     * @method addListener
-	     */
-	    EventEmitter.prototype.addListener = EventEmitter.prototype.on;
-
-	   /**
-	     * Unbind an event by type and handler.
-	     *   This undoes the work of "on".
-	     *
-	     * @method removeListener
-	     *
-	     * @param {string} type event type key (for example, 'click')
-	     * @param {function} handler function object to remove
-	     * @return {EventEmitter} this
-	     */
-	    EventEmitter.prototype.removeListener = function removeListener(type, handler) {
-	        var listener = this.listeners[type];
-	        if (listener !== undefined) {
-	            var index = listener.indexOf(handler);
-	            if (index >= 0) listener.splice(index, 1);
-	        }
-	        return this;
-	    };
-
-	    /**
-	     * Call event handlers with this set to owner.
-	     *
-	     * @method bindThis
-	     *
-	     * @param {Object} owner object this EventEmitter belongs to
-	     */
-	    EventEmitter.prototype.bindThis = function bindThis(owner) {
-	        this._owner = owner;
-	    };
-
-	    module.exports = EventEmitter;
-	}.call(exports, __webpack_require__, exports, module)), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-
-
-/***/ },
-/* 38 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var __WEBPACK_AMD_DEFINE_RESULT__;/* This Source Code Form is subject to the terms of the Mozilla Public
-	 * License, v. 2.0. If a copy of the MPL was not distributed with this
-	 * file, You can obtain one at http://mozilla.org/MPL/2.0/.
-	 *
-	 * Owner: mark@famo.us
-	 * @license MPL 2.0
-	 * @copyright Famous Industries, Inc. 2014
-	 */
-
-	!(__WEBPACK_AMD_DEFINE_RESULT__ = (function(require, exports, module) {
-	    /**
 	     * This namespace holds standalone functionality.
 	     *  Currently includes name mapping for transition curves,
 	     *  name mapping for origin pairs, and the after() function.
@@ -13549,7 +13448,7 @@
 
 
 /***/ },
-/* 39 */
+/* 38 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_RESULT__;
@@ -13723,7 +13622,7 @@
 
 
 /***/ },
-/* 40 */
+/* 39 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = function(module) {
@@ -13736,6 +13635,107 @@
 		}
 		return module;
 	}
+
+
+/***/ },
+/* 40 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __WEBPACK_AMD_DEFINE_RESULT__;/* This Source Code Form is subject to the terms of the Mozilla Public
+	 * License, v. 2.0. If a copy of the MPL was not distributed with this
+	 * file, You can obtain one at http://mozilla.org/MPL/2.0/.
+	 *
+	 * Owner: mark@famo.us
+	 * @license MPL 2.0
+	 * @copyright Famous Industries, Inc. 2014
+	 */
+
+	!(__WEBPACK_AMD_DEFINE_RESULT__ = (function(require, exports, module) {
+	    /**
+	     * EventEmitter represents a channel for events.
+	     *
+	     * @class EventEmitter
+	     * @constructor
+	     */
+	    function EventEmitter() {
+	        this.listeners = {};
+	        this._owner = this;
+	    }
+
+	    /**
+	     * Trigger an event, sending to all downstream handlers
+	     *   listening for provided 'type' key.
+	     *
+	     * @method emit
+	     *
+	     * @param {string} type event type key (for example, 'click')
+	     * @param {Object} event event data
+	     * @return {EventHandler} this
+	     */
+	    EventEmitter.prototype.emit = function emit(type, event) {
+	        var handlers = this.listeners[type];
+	        if (handlers) {
+	            for (var i = 0; i < handlers.length; i++) {
+	                handlers[i].call(this._owner, event);
+	            }
+	        }
+	        return this;
+	    };
+
+	    /**
+	     * Bind a callback function to an event type handled by this object.
+	     *
+	     * @method "on"
+	     *
+	     * @param {string} type event type key (for example, 'click')
+	     * @param {function(string, Object)} handler callback
+	     * @return {EventHandler} this
+	     */
+	   EventEmitter.prototype.on = function on(type, handler) {
+	        if (!(type in this.listeners)) this.listeners[type] = [];
+	        var index = this.listeners[type].indexOf(handler);
+	        if (index < 0) this.listeners[type].push(handler);
+	        return this;
+	    };
+
+	    /**
+	     * Alias for "on".
+	     * @method addListener
+	     */
+	    EventEmitter.prototype.addListener = EventEmitter.prototype.on;
+
+	   /**
+	     * Unbind an event by type and handler.
+	     *   This undoes the work of "on".
+	     *
+	     * @method removeListener
+	     *
+	     * @param {string} type event type key (for example, 'click')
+	     * @param {function} handler function object to remove
+	     * @return {EventEmitter} this
+	     */
+	    EventEmitter.prototype.removeListener = function removeListener(type, handler) {
+	        var listener = this.listeners[type];
+	        if (listener !== undefined) {
+	            var index = listener.indexOf(handler);
+	            if (index >= 0) listener.splice(index, 1);
+	        }
+	        return this;
+	    };
+
+	    /**
+	     * Call event handlers with this set to owner.
+	     *
+	     * @method bindThis
+	     *
+	     * @param {Object} owner object this EventEmitter belongs to
+	     */
+	    EventEmitter.prototype.bindThis = function bindThis(owner) {
+	        this._owner = owner;
+	    };
+
+	    module.exports = EventEmitter;
+	}.call(exports, __webpack_require__, exports, module)), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 
 
 /***/ }
